@@ -13,5 +13,12 @@ ErrorMessage = "Please enter a valid email address")]
         public string Phone { get; set; }
         [Required(ErrorMessage = "Please specify whether you'll attend")]
         public bool? WillAttend { get; set; }
+        [Required(ErrorMessage = "Please enter your address")]
+        public string Address { get; set; }  
+        [Required(ErrorMessage = "Please enter your Twitter account")]
+        public string TwitterAccount { get; set; } 
+        [Required(ErrorMessage = "Please specify your technical interest")]
+        public TechnicalInterest Interest { get; set; }
+
     }
 }
