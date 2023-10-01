@@ -31,6 +31,21 @@
                     @Html.TextBoxFor(x => x.Phone, new { @class = "formcontrol" })
                 </div>
                 <div class="form-group">
+                    <label>Your address:</label>
+                    @Html.TextBoxFor(x => x.Address, new { @class = "formcontrol" })
+                </div>
+
+                <div class="form-group">
+                    <label>Your Twitter account:</label>
+                    @Html.TextBoxFor(x => x.TwitterAccount, new { @class = "formcontrol" })
+                </div>
+
+                <div class="form-group">
+                    <label>Your technical interest:</label>
+                    @Html.EnumDropDownListFor(x => x.Interest, new { @class = "formcontrol" })
+                </div>
+
+                <div class="form-group">
                     <label>Will you attend?</label>
                     @Html.DropDownListFor(x => x.WillAttend, new[] {
 new SelectListItem() {Text = "Yes, I'll be there", Value = bool.TrueString},
