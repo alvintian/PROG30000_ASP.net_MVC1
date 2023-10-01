@@ -1,6 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 namespace PartyInvites.Models
 {
+    //class used for storing and displaying error messages
     public class GuestResponse
     {
         [Required(ErrorMessage = "Please enter your name")]
@@ -21,4 +22,4 @@ namespace PartyInvites.Models
         public TechnicalInterest Interest { get; set; }
 
     }
-}
+}

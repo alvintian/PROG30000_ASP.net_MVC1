@@ -6,8 +6,11 @@ using System.Web.Mvc;
 using PartyInvites.Models;
 namespace PartyInvites.Controllers
 {
+    // HomeController class inherits from the Controller base class and
+    // is responsible for handling HTTP requests directed to the home page
     public class HomeController : Controller
     {
+        // The Index method returns a view of the home page.
         public ViewResult Index()
         {
             int hour = DateTime.Now.Hour;
@@ -24,7 +27,6 @@ namespace PartyInvites.Controllers
         {
             if (ModelState.IsValid)
             {
-                // TODO: Email response to the party organizer
                 return View("Thanks", guestResponse);
             }
             else

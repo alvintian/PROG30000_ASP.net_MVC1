@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-
+//enum class
 namespace PartyInvites.Models
 {
     public enum TechnicalInterest
